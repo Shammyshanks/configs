@@ -84,7 +84,12 @@
   # $ nix search wget
 
 
-
+services.xserver.displayManager.sessionCommands = ''
+  ${pkgs.xorg.xrdb}/bin/xrdb -merge <${pkgs.writeText "Xresources" ''
+    Xcursor.theme: Adwaita
+    Xcursor.size: 64
+  ''}
+'';
 #services.xserver.windowManager.herbstluftwm.configFile = /home/thor/.config/herbstluftwm/autostart;
 services.xserver.windowManager.herbstluftwm.enable = true;
 #services.xserver.windowManager.herbstluftwm.package = pkgs.herbstluftwm;
