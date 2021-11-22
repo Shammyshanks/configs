@@ -33,8 +33,11 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   networking.useDHCP = false;
-  networking.interfaces.enp0s3.useDHCP = true;
-
+ 
+  #networking.interfaces.enp0s3.useDHCP = true; # For Desktop
+  #networking.interfaces.enp0s3.useDHCP = true; # For Thinkpad
+  #networking.interfaces.enp0s3.useDHCP = true; # For Thinkpad
+  
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
