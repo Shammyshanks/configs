@@ -19,12 +19,13 @@
    boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
 
   # networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  # networking.wireless.networks = {
-  # briggsx1 = {               
-  #psk = "Jr343434";
-  # };
-  # };
+  networking.networkmanager.enable = true;
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.networks = {
+  briggsx1 = {               
+  psk = "Jr343434";
+   };
+   };
 
   # Set your time zone.
    time.timeZone = "America/Los_Angeles";
@@ -75,7 +76,8 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.thor = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+      home = "/home/thor";
+     extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
    };
 
   # List packages installed in system profile. To search, run:
