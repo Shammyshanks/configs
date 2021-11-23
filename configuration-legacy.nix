@@ -25,6 +25,8 @@
   networking.wireless.networks = {
   briggsx1 = {                # SSID with no spaces or special characters
     psk = "Jr343434";
+  }; 
+  #More networks here.
   };
   # Set your time zone.
    time.timeZone = "America/Los_Angeles";
