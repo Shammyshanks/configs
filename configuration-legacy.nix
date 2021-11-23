@@ -103,6 +103,7 @@ feh
 polybar
 dropbox
 dmenu
+picom
 ranger
 screenkey
   (st.overrideAttrs (oldAttrs: rec {
