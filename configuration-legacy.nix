@@ -55,8 +55,8 @@
 
 
   # Enable the Plasma 5 Desktop Environment.
- # services.xserver.displayManager.sddm.enable = true;
-#  services.xserver.desktopManager.plasma5.enable = true;
+  # services.xserver.displayManager.sddm.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
   
 
   # Configure keymap in X11
@@ -90,9 +90,7 @@ services.xserver.displayManager.sessionCommands = ''
     Xcursor.size: 64
   ''}
 '';
-#services.xserver.windowManager.herbstluftwm.configFile = /home/thor/.config/herbstluftwm/autostart;
 services.xserver.windowManager.herbstluftwm.enable = true;
-#services.xserver.windowManager.herbstluftwm.package = pkgs.herbstluftwm;
 nixpkgs.config.allowUnfree = true; 
 environment.systemPackages = with pkgs; [ 
 wget
@@ -107,8 +105,6 @@ dropbox
 dmenu
 ranger
 screenkey
-
-alacritty
   (st.overrideAttrs (oldAttrs: rec {
     src = fetchFromGitHub {
       owner = "LukeSmithxyz";
