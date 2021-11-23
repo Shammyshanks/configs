@@ -19,15 +19,12 @@
    boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
 
   # networking.hostName = "nixos"; # Define your hostname.
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   networking.wireless.networks = {
-  briggsx1 = {                # SSID with no spaces or special characters
-    psk = "Jr343434";
-  }; 
-  #More networks here.
+    briggsx1 = { psk = "Jr343434" };
   };
+  
   # Set your time zone.
    time.timeZone = "America/Los_Angeles";
 
