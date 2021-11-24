@@ -63,7 +63,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.thor = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+     extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
    };
    
 services.xserver.windowManager.herbstluftwm.enable = true;
@@ -77,16 +77,11 @@ emacs
 neofetch
 pfetch
 feh
-#bspwm
-#sxhkd
 polybar
 dropbox
 dmenu
-#herbstluftwm
 ranger
 screenkey
-
-alacritty
   (st.overrideAttrs (oldAttrs: rec {
     src = fetchFromGitHub {
       owner = "LukeSmithxyz";
