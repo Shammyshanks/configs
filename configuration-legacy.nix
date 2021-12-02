@@ -10,8 +10,7 @@
     ];
     
   # Enable Bluetooth
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
