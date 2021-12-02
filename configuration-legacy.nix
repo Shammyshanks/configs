@@ -25,9 +25,9 @@
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.networkmanager.enable = true;
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.wireless.networks = {
-    briggsx1 = { psk = "Jr343434" ;
-  };
+ # networking.wireless.networks = {
+ #   briggsx1 = { psk = "Jr343434" ;
+ # };
   
   # Set your time zone.
    time.timeZone = "America/Los_Angeles";
@@ -38,8 +38,8 @@
   networking.useDHCP = false;
  
   #networking.interfaces.enp0s3.useDHCP = true; # For Desktop
-  #networking.interfaces.enp0s25.useDHCP = true; # For Thinkpad
-  #networking.interfaces.wlp2s0.useDHCP = true; # For Thinkpad
+  networking.interfaces.enp0s25.useDHCP = true; # For Thinkpad
+  networking.interfaces.wlp2s0.useDHCP = true; # For Thinkpad
   
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
