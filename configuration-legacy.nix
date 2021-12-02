@@ -10,7 +10,8 @@
     ];
     
   # Enable Bluetooth
-
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -85,12 +86,6 @@
   # $ nix search wget
 
 
-services.xserver.displayManager.sessionCommands = ''
-  ${pkgs.xorg.xrdb}/bin/xrdb -merge <${pkgs.writeText "Xresources" ''
-    Xcursor.theme: Adwaita
-    Xcursor.size: 64
-  ''}
-'';
 services.xserver.windowManager.herbstluftwm.enable = true;
 nixpkgs.config.allowUnfree = true; 
 environment.systemPackages = with pkgs; [ 
