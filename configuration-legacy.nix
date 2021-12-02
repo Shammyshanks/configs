@@ -97,6 +97,8 @@ emacs
 neofetch
 pfetch
 feh
+syncthing
+syncthing-gtk
 polybar
 dropbox
 dmenu
