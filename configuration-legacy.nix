@@ -97,6 +97,7 @@ emacs
 neofetch
 pfetch
 feh
+dropbox
 syncthing
 syncthing-gtk
 polybar
