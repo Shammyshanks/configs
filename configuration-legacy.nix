@@ -26,8 +26,8 @@
   # networking.networkmanager.enable = true;
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.wireless.networks = {
-    briggsx1 = { psk = "Jr343434" ;
-  }};
+    briggsx1 = { psk = "Jr343434" };
+  };
   
   # Set your time zone.
    time.timeZone = "America/Los_Angeles";
