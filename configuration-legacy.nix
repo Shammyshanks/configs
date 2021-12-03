@@ -24,7 +24,6 @@
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.networkmanager.enable = true;
-  networking.wireless.interfaces = [ "wlp2s0" ];
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.wireless.networks = {
     briggsx1 = { psk = "Jr343434" ;
@@ -39,6 +38,7 @@
   # replicates the default behaviour.
   networking.useDHCP = false;
  
+  networking.wireless.interfaces = [ "wlp2s0" ];
   #networking.interfaces.enp0s3.useDHCP = true; # For Desktop
   networking.interfaces.enp0s25.useDHCP = true; # For Thinkpad
   networking.interfaces.wlp2s0.useDHCP = true; # For Thinkpad
