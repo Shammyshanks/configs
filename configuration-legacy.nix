@@ -93,11 +93,15 @@ services.xserver.windowManager.herbstluftwm.enable = true;
 nixpkgs.config = {
   allowUnfree = true;
   allowBroken = true;
+  chromium = {
+     enablePepperFlash = true; # Chromium removed support for Mozilla (NPAPI) plugins so Adobe Flash no longer works 
+    };
   };
 environment.systemPackages = with pkgs; [ 
 wget
 git
 brave
+chromium
 emacs
 neofetch
 pfetch
