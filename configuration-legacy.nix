@@ -78,6 +78,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.defaultUserShell = pkgs.zsh;
   users.users.thor = {
      isNormalUser = true;
       home = "/home/thor";
@@ -87,7 +88,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-
+programs.zsh.enable = true;
 services.xserver.windowManager.herbstluftwm.enable = true;
 #nixpkgs.config.allowUnfree = true; 
 nixpkgs.config = {
