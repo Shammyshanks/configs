@@ -99,6 +99,7 @@ wget
 git
 brave
 chromium
+firefox
 emacs
 neofetch
 pfetch
