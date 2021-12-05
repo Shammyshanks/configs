@@ -92,7 +92,7 @@ fonts.fonts = with pkgs; [
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.defaultUserShell = pkgs.zsh;
+  #users.defaultUserShell = pkgs.zsh;
   users.users.thor = {
      isNormalUser = true;
       home = "/home/thor";
