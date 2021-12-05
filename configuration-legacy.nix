@@ -48,8 +48,9 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
 fonts.fonts = with pkgs; [
-  noto-fonts
   siji
+  nerdfonts
+  noto-fonts
   noto-fonts-cjk
   noto-fonts-emoji
   liberation_ttf
