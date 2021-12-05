@@ -102,7 +102,7 @@ fonts.fonts = with pkgs; [
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-programs.zsh.enable = true;
+#programs.zsh.enable = true;
 services.xserver.windowManager.herbstluftwm.enable = true;
 #nixpkgs.config.allowUnfree = true; 
 nixpkgs.config = {
