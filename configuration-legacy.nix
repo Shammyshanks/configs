@@ -50,6 +50,7 @@
 fonts.fonts = with pkgs; [
   siji
   nerdfonts
+  dejavu_fonts
   noto-fonts
   noto-fonts-cjk
   noto-fonts-emoji
