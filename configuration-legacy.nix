@@ -112,9 +112,8 @@ nixpkgs.config = {
   };
 environment.systemPackages = with pkgs; [ 
 wget
-xorg.xinit
-xorg.xorgserver
-xorg.xrdb 
+gtk3
+gtk2
 git
 brave
 chromium
