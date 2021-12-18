@@ -116,6 +116,7 @@ xorg.xinit
 xorg.xorgserver
 xorg.xrdb 
 git
+vul #Latin Vulgate Bible
 brave
 chromium
 firefox
