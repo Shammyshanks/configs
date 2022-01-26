@@ -61,25 +61,57 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-   users.users.thor = {
+  users.users.thor = {
      isNormalUser = true;
+      home = "/home/thor";
      extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
    };
    
+   
+   fonts.fonts = with pkgs; [
+  siji
+  nerdfonts
+  dejavu_fonts
+  noto-fonts
+  noto-fonts-cjk
+  noto-fonts-emoji
+  liberation_ttf
+  fira-code
+  fira-code-symbols
+  mplus-outline-fonts
+  dina-font
+  proggyfonts
+];
+
 services.xserver.windowManager.herbstluftwm.enable = true;
-#services.xserver.windowManager.herbstluftwm.package = pkgs.herbstluftwm;
-nixpkgs.config.allowUnfree = true; 
+nixpkgs.config = {
+  allowUnfree = true;
+  allowBroken = true;
+  };
 environment.systemPackages = with pkgs; [ 
 wget
+xorg.xinit
+xorg.xorgserver
+xorg.xrdb
+base16-builder
+rxvt-unicode
+ngrok
 git
 brave
+blueman
+chromium
+firefox
 emacs
+gcc
+screenfetch  
 neofetch
 pfetch
 feh
+syncthing
+syncthing-gtk
 polybar
-dropbox
 dmenu
+picom
 ranger
 screenkey
   (st.overrideAttrs (oldAttrs: rec {
