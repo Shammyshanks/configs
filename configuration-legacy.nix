@@ -112,18 +112,14 @@ nixpkgs.config = {
   allowBroken = true;
   };
 environment.systemPackages = with pkgs; [ 
-  wget
-  anydesk
+wget
 xorg.xinit
 xorg.xorgserver
 xorg.xrdb
-base16-builder
-rxvt-unicode
-ngrok
 git
+obsidian
 brave
 blueman
-chromium
 firefox
 emacs
 gcc
