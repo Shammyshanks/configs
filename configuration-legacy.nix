@@ -134,6 +134,7 @@ dmenu
 picom
 ranger
 screenkey
+youtube-dl
   (st.overrideAttrs (oldAttrs: rec {
     src = fetchFromGitHub {
       owner = "LukeSmithxyz";
