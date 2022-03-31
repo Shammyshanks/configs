@@ -11,3 +11,4 @@ alias neofetch="sudo neofetch --ascii_distro nixos_old"
 alias gitconfigs='git clone https://github.com/shammyshanks/configs'
 alias gitemacs='git clone https://github.com/shammyshanks/emacs-current'
 alias gitstump='git clone https://github.com/shammyshanks/stumpwm'
+alias githerb='git clone https://github.com/shammyshanks/herbstluftwm'
