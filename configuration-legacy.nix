@@ -130,6 +130,7 @@ feh
 syncthing
 syncthing-gtk
 polybar
+sxhkd
 dmenu
 picom
 ranger
