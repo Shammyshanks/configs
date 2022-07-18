@@ -122,6 +122,8 @@ brave
 blueman
 firefox
 emacs
+gotop
+gtop
 gcc
 screenfetch  
 neofetch
