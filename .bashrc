@@ -15,3 +15,5 @@ alias githerb='git clone https://github.com/shammyshanks/herbstluftwm'
 alias gitpoly='git clone https://github.com/shammyshanks/polybar'
 alias gitgruv='git clone https://github.com/shammyshanks/gruvbox'
 alias gitkeys='git clone https://github.com/shammyshanks/sxhkd'
+
+# for zsh PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
