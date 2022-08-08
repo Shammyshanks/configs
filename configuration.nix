@@ -108,22 +108,18 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 environment.systemPackages = with pkgs; [
+emacs-all-the-icons-fonts
 # ascii art
 
-ascii-rain
 Asciiquarium
 Banner
-bash-pipes
+pipes
 boxes
 cbonsai
 catimg
 cmatrix
-FIGlet
-jp2a
-nyancat
-TOIlet
 tty-clock
-sl
+
 
 python
 lsd  
